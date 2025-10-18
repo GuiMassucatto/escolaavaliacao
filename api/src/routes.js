@@ -5,10 +5,6 @@ const ProfessorController = require("./controllers/professorController");
 const TurmasController = require("./controllers/turmaController");
 const AtividadesController = require("./controllers/atividadeController");
 
-routes.get("/", (req, res) => {
-  res.send("Feito com amor por Guilherme Canina");
-});
-
 routes.get("/professores", ProfessorController.getProfessores);
 routes.get("/professores/:id", ProfessorController.getProfessorById);
 routes.post("/professores", ProfessorController.createProfessor);
